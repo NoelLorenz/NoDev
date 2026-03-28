@@ -1,0 +1,52 @@
+@plugin '@tailwindcss/typography';
+@import 'tailwindcss';
+
+@theme {
+	--color-secondary: #b5ecdf;
+	--color-secondary-50: #f4fdfb;
+	--color-secondary-100: #e6faf6;
+	--color-secondary-200: #cdf4ec;
+	--color-secondary-300: #b5ecdf;
+	--color-secondary-400: #8edbcc;
+	--color-secondary-500: #6bc8b7;
+	--color-secondary-600: #50a79a;
+	--color-secondary-700: #3b8277;
+	--color-secondary-800: #295e56;
+	--color-secondary-900: #1a3d38;
+	--color-secondary-950: #0c221f;
+
+	/* TERTIARY */
+	--color-tertiary: #71b8ca;
+	--color-tertiary-50: #f2fafc;
+	--color-tertiary-100: #e3f3f6;
+	--color-tertiary-200: #c7e6ec;
+	--color-tertiary-300: #a5d4dd;
+	--color-tertiary-400: #8ac6d3;
+	--color-tertiary-500: #71b8ca;
+	--color-tertiary-600: #589aaa;
+	--color-tertiary-700: #437b88;
+	--color-tertiary-800: #315c65;
+	--color-tertiary-900: #213f45;
+	--color-tertiary-950: #132427;
+
+	/* NEUTRAL */
+	--color-neutral: #0f172a;
+	--color-neutral-50: #f8fafc;
+	--color-neutral-100: #e2e8f0;
+	--color-neutral-200: #cbd5e1;
+	--color-neutral-300: #94a3b8;
+	--color-neutral-400: #64748b;
+	--color-neutral-500: #475569;
+	--color-neutral-600: #334155;
+	--color-neutral-700: #1e293b;
+	--color-neutral-800: #0f172a;
+	--color-neutral-900: #020617;
+	--color-neutral-950: #01030a;
+}
+
+@layer base {
+	/* disable chrome cancel button */
+	input[type='search']::-webkit-search-cancel-button {
+		display: none;
+	}
+}
