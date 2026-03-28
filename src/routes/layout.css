@@ -1,5 +1,8 @@
 @plugin '@tailwindcss/typography';
 @import 'tailwindcss';
+@plugin 'flowbite/plugin';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
 	--color-secondary: #b5ecdf;
@@ -42,7 +45,23 @@
 	--color-neutral-800: #0f172a;
 	--color-neutral-900: #020617;
 	--color-neutral-950: #01030a;
+
+	--color-ash: #b8bec5;
+	--color-ash-50: #f8f9fa;
+	--color-ash-100: #eef1f3;
+	--color-ash-200: #dce1e5;
+	--color-ash-300: #c8cfd5;
+	--color-ash-400: #b8bec5;
+	--color-ash-500: #9ea6af;
+	--color-ash-600: #808992;
+	--color-ash-700: #646c74;
+	--color-ash-800: #4b5259;
+	--color-ash-900: #34393e;
+	--color-ash-950: #1d2024;
 }
+
+@source '../../node_modules/flowbite-svelte/dist';
+@source '../../node_modules/flowbite-svelte-icons/dist';
 
 @layer base {
 	/* disable chrome cancel button */
